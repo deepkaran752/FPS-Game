@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.product">
+
+    <application android:label="@string/app_name">
+
+        <meta-data android:name="com.example.inputmanager.InputHandle" android:focusableInTouchMode="true" android:focusable="true" android:value="com.example.inputmanager.v1" />
+
+        <activity
+            android:name="com.example.inputmanager.InputHandle"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

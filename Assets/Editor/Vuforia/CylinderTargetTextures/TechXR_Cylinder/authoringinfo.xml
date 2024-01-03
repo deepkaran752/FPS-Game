@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VuforiaUnityInfo version="7.0">
+    <TargetSet version="5.0" toolVersion="2.8.0">
+        <CylinderTarget name="TechXR_Cylinder" version="3.0" targetId="de9e183135ef4434a4f05f8adeff432c" sideLength="0.065000" topDiameter="0.100000" bottomDiameter="0.080000" sideImage="TechXR_Cylinder.Body_scaled.jpg" topImage="TechXR_Cylinder.Top_scaled.jpg"/>
+    </TargetSet>
+</VuforiaUnityInfo>
