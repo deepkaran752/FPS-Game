@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class BulletRound : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ParticleSystem hitEffect;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        hitEffect.gameObject.SetActive(true);
+        hitEffect.transform.SetParent(null);
+        Destroy(gameObject);
     }
 }
