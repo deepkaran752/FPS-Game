@@ -12,6 +12,7 @@ TagManager:
   - TechXRDeveloperCube
   - SenseEventSystem
   - GunContainer
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - 
   - Ground
   - SenseXR
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
