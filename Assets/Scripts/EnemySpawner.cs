@@ -15,6 +15,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //whatever is present inside the enemy spawner at the start would be consider as children...
         foreach (Transform child in transform)
             spawnPoints.Add(child);
     }
