@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 9107186392441322949}
+  damage: 20
+  targetObjectLayer: 11
 --- !u!1001 &9107186392455340549
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ public class EnemyAI : MonoBehaviour
 
     public Shooting enemyShoot;
 
+    //for DeathEffect
+    public ParticleSystem deathBoom;
+
     public float sightRange, attackRange;
     private bool inSightRange, inAttackRange;
     // Start is called before the first frame update
@@ -33,6 +36,8 @@ public class EnemyAI : MonoBehaviour
         if (!inSightRange && !inAttackRange) Patrol();
         else if (inSightRange && !inAttackRange) Chase();
         else if (inSightRange && inAttackRange) Attack();
+
+        EnemyDeath();
     }
 
     //for patroling
@@ -60,5 +65,15 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
         transform.LookAt(Player);
         enemyShoot.Shoot();
+    }
+
+    void EnemyDeath()
+    {
+        if(gameObject.GetComponent<Health>().health <= 0)
+        {
+            deathBoom.gameObject.SetActive(true);
+            deathBoom.gameObject.transform.SetParent(null);
+            Destroy(gameObject);
+        }
     }
 }
