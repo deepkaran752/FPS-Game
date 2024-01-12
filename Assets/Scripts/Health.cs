@@ -20,4 +20,14 @@ public class Health : MonoBehaviour
             healthText.text = health.ToString("F0");
 
     }
+
+    public void ResetHealth()
+    {
+        health = 100;
+        if (healthImage)
+            healthImage.fillAmount = 1;
+
+        if (healthText)
+            healthText.text = health.ToString("F0");
+    }
 }
